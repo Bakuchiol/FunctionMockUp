@@ -8,13 +8,6 @@ let topContainer = [
 
     ]
 
-let handBags = [
-    // wristlet
-    "https://media.gucci.com/style/Transparent_Center_0_0_730x490/1675273568/696009_AABY7_2801_001_071_0025_Light.png",
-    // belt bag
-    "https://media.gucci.com/style/Transparent_Center_0_0_730x490/1681488941/752597_FACFW_8920_001_077_0000_Light.png"
-]
-
 const promos = document.querySelector('.promoContainer');
 const nav = document.querySelector('.mainNav');
 const header = document.querySelector('.list');
@@ -23,6 +16,7 @@ const show = document.querySelector('.gagaBox')
 
 
 // solid color scroll -- take out header & promo
+// 1. FUNCTION
 window.addEventListener('scroll', () => {
     if(window.scrollY > 120) {
         promos.style.display ="none"
@@ -36,6 +30,7 @@ window.addEventListener('scroll', () => {
 });
 
 // click logo -- lady gaga gucci gif
+// 1. TOGGLE
 const gaga = () => {
     show.classList.toggle('gagaGif')
 }
@@ -44,18 +39,46 @@ const gaga = () => {
 const frame = document.querySelector('.frame')
 
 // show frame when poke bird
+// 2. TOGGLE
 const showFrame = () => {
     frame.classList.toggle('spinFrame')
 }
 
-// stop frame when poke face
 const stop = document.querySelector('spin');
 const spinner = document.querySelector('.spinSpin');
+const bubble = document.querySelector('.bubble')
 
+// 2. FUNCTION
+// stop/pause spinning when face poked
 const twirl = () => {
     spinner.classList.toggle('spinSpin')
 }
 
+// 3. FUNCTION
+// make bubble to stop jiggling when clicked
+const jiggle = document.querySelector('.bubbleJiggle')
 const stopMoving = () => {
-    
+    jiggle.classList.toggle('bubbleJiggle')
 }
+
+// 4. FUNCTION
+// change gifs
+let memes = [
+    //0 flowers
+    "https://img.buzzfeed.com/buzzfeed-static/static/2021-07/30/16/asset/7014576775aa/anigif_sub-buzz-4186-1627661817-7.gif",
+    //1 dancing
+    "https://media1.giphy.com/media/6huOWH3TNWVheHWRSW/giphy.gif?cid=6c09b9524v4go3m7yq6adgxd5h0xjyxn8si9o8cpjrrd9k6o&ep=v1_stickers_related&rid=giphy.gif&ct=s",
+    //2 gaga
+    "https://images.milledcdn.com/2019-04-03/QZXh9_Y9FQBzsju9/SC5t6VSMmt8J.gif"
+]
+let count = 0;
+const changing = () => {
+    let other = document.querySelector('.vibe')
+    other.setAttribute('src', memes[count])
+    count++
+}
+
+
+// 5. FUNCTION
+// click stories reverses alignment
+

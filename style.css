@@ -5,6 +5,33 @@
     font-family: sans-serif;
 }
 /* try at animation */
+/* chat button */
+@keyframes shake {
+    0% {
+        transform: translateX(2px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-1px);
+    }
+}
+.chat {
+    z-index: 999;
+    display: flex;
+    justify-content: flex-end;
+}
+.bubble {
+    /* border: solid palevioletred; */
+    position:fixed;
+    bottom: 0;
+    margin: 0 80px 60px 0;
+}
+.bubbleJiggle {
+    animation: 800ms shake infinite;
+}
+
 
 @keyframes promo {
     0% {top : 100%;}
@@ -14,7 +41,7 @@
     100% { top: -100%}
 }
 .promoContainer {
-    border: solid red;
+    /* border: solid red; */
     height: 50px;
     background: #fff;
     color: black;
@@ -23,29 +50,31 @@
     position: relative;
 }
 .promotional{
-    border: solid fuchsia;
+    /* border: solid fuchsia; */
     display: flex;
     margin-left: 40px;
     width: 100%;
     height: 100%;
 }
 .promoDivs {
-    border: solid blue;
+    /* border: solid blue; */
     width: 60%;
     height: 100%;
     margin-left: 180px;
 }
 .promos{
-    border: solid lime;
+    /* border: solid lime; */
     height: 30px;
-    text-align: center;
-    margin: 5px 0 12px 0;
+    margin: 10px 0 15px 0;
     position: relative;
     animation: 10s promo infinite ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .close {
-    border: solid white;
+    /* border: solid white; */
     width: 15px;
     height: 15px;
     margin: 15px 40px 0 0;
@@ -68,7 +97,7 @@
 }
 .mainNav {
     display: flex;
-    border: solid yellowgreen;
+    /* border: solid yellowgreen; */
     height: 80px;
     box-shadow: inset 0 30px 30px -1px rgba(0,0,0,0.9)
 }
@@ -76,7 +105,7 @@
     display: flex;
     justify-content: space-between;
     width: 65%;
-    border: solid orange;
+    /* border: solid orange; */
 }
 .navLeftText {
     display: flex;
@@ -94,7 +123,7 @@
     margin-top: 20px;
 }
 .navRight {
-    border: solid lightskyblue;
+    /* border: solid lightskyblue; */
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -102,7 +131,7 @@
     margin-right: 20px;
 }
 .heart {
-    border: solid pink;
+    /* border: solid pink; */
     width: 90px;
     display: flex;
     justify-content: space-between;
@@ -111,7 +140,7 @@
     margin-top: 5px;
 }
 .bag {
-    border: solid yellow;
+    /* border: solid yellow; */
     width: 60px;
     display: flex;
     justify-content: space-between;
@@ -125,7 +154,7 @@
     filter: invert(10);
 }
 .circle {
-    border: 2.5px solid white;
+    /* border: 2.5px solid white; */
     border-radius: 50%;
     padding: 5px;
     margin-left: 30px;
@@ -134,13 +163,15 @@
 /* SUBNAV */
 .list{
     z-index: 9999;
-    border: solid white;
+    /* border: solid white; */
     font-size: 12px;
     height: 60px;
     padding-top: 20px;
 }
 .navBarScroll {
     background: black;
+    height: 120px;
+    padding-top: 80px;
     transition: all 0.5s;
 }
 .list ul{
@@ -164,7 +195,7 @@
     color: #fff;
 }
 .mainDesc {
-    border: solid salmon;
+    /* border: solid salmon; */
     padding: 180px 40px 0 40px;
 }
 h1 {
@@ -214,12 +245,16 @@ h1 {
 }
 .bagImages {
     border: solid red;
-    width: 100%;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+.bagProduct{
+    margin: auto;
 }
 .handbag {
-    border: solid red;
+    border: solid green;
     height: 60%;
-    
 }
 .bagImages p {
     margin: 20px 0 20px 0;
@@ -241,7 +276,6 @@ h1 {
 /* ------------ */
 .centerBag{
     display: flex;
-    justify-content: center;
 }
 .centerButton {
     display: flex;
@@ -257,7 +291,7 @@ h1 {
 
 /* editorial */
 .editorial {
-    border: solid brown;
+    /* border: solid brown; */
     display: flex;
     justify-content: center;
     margin-top: 150px;
@@ -267,7 +301,7 @@ h1 {
     width: 95%;
 }
 .buttons{
-    border: solid tomato;
+    /* border: solid tomato; */
     width: 60%;
     height: 80%;
     position: absolute;
@@ -276,12 +310,12 @@ h1 {
     justify-content: space-between;
 }
 .poof {
-    border: solid violet;
+    /* border: solid violet; */
     width:90px;
     height: 90px;
 }
 .spin {
-    border: solid seagreen;
+    /* border: solid seagreen; */
     width: 150px;
     height: 250px;
     align-self: flex-end;
@@ -290,7 +324,7 @@ h1 {
 }
 .frame {
     display: none;
-    border: solid lawngreen;
+    /* border: solid lawngreen; */
     position: absolute;
     margin-top: 400px;
     margin-left: 350px;
@@ -344,7 +378,7 @@ h1 {
 .middleStories {
     width: 80%;
     height: 75%;
-    border: 2px solid darkred;
+    /* border: 2px solid darkred; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -352,7 +386,7 @@ h1 {
     margin-top: 40px;
 }
 .summerStories{
-    border: solid blueviolet;
+    /* border: solid blueviolet; */
     width: 170px;
     height: 200px;
     margin-left: -6px;
@@ -421,32 +455,4 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.gucciDance {
-    border: solid white;
-    width: 33.7%;
-}
-
-/* chat button */
-@keyframes shake {
-    0% {
-        transform: translateX(2px);
-    }
-    50% {
-        transform: translateX(10px);
-    }
-    100% {
-        transform: translateX(-2px);
-    }
-}
-.chat {
-    display: flex;
-    justify-content: flex-end;
-}
-.bubble {
-    border: solid palevioletred;
-    position:fixed;
-    bottom: 0;
-    margin: 0 40px 50px 0;
-    animation: 800ms shake infinite;
 }
