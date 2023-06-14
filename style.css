@@ -1,0 +1,194 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* try at animation */
+/* .promos {
+    animation-name: slideUp;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    display: block;
+} */
+
+@keyframes slideUp {
+    0%,50% {
+        transform : translateY(100%);
+    }
+    60%,
+    100% {
+        transform: translateY(0);
+    }
+}
+.promoContainer {
+    border: solid red;
+    height: 50px;
+    background: #fff;
+    color: black;
+}
+.promotional{
+    display: flex;
+    overflow: hidden;
+    margin-left: 40px;
+}
+.promos{
+    border: solid lime;
+    width: 90%;
+    height: 30px;
+    text-align: center;
+    margin-top: 15px;
+}
+.close {
+    border: solid white;
+    width: 15px;
+    height: 15px;
+    margin: 15px 40px 0 0;
+}
+
+
+/* navbar */
+.navBar {
+    height: 80px;
+    width: 100%;
+    box-shadow: inset 0 30px 30px -7px rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    font-size: 12px;
+    color: #fff;
+}
+.navBar:hover {
+    background-color: #000;
+}
+.mainNav {
+    display: flex;
+    border: solid yellowgreen;
+    height: 80px;
+}
+.navLeft {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    border: solid orange;
+}
+.navLeftText {
+    display: flex;
+    margin: 25px 0 0 20px;
+}
+.navLeftText p {
+    margin-right: 15px
+}
+.map {
+    margin-top: -5px;
+}
+
+
+.gucciLogo {
+    height: 40%;
+    margin-top: 20px;
+}
+.navRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 45%;
+    margin-right: 60px;
+}
+.searchIcon {
+    width: 15px;
+    filter: invert(10);
+}
+.circle {
+    border: 2.5px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* SUBNAV */
+.list{
+    border: solid white;
+    font-size: 12px;
+    height: 60px;
+    padding-top: 20px;
+}
+.navBarScroll {
+    background: black;
+    transition: all 0.5s;
+}
+.list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+
+
+/* top main promo */
+.mainImage {
+    margin-top: 50px;
+    background-image: url("https://media.gucci.com/content/HeroBigStandard_1600x760/1685615407/HeroBigStandard_FDAY-June6-def_001_Default.jpg");
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    text-align: center;
+    color: #fff;
+}
+.mainDesc {
+    margin: 0;
+}
+
+/* -----ARROWS------ */
+.pointers {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+.arrow {
+    width: 50px;
+    filter: invert(10)
+}
+
+/* ---------------- */
+
+
+
+/* bag carousel */
+.bagContainer {
+    display: flex;
+    justify-content: center; 
+    border: 2px solid green;
+}
+.bagImages {
+    border: solid red;
+}
+.handbag {
+    height: 80%;
+}
+.bagImages p {
+    margin: 20px 0 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+.centerButton {
+    display: flex;
+    justify-content: center;
+}
+.shopNow {
+    width: 150px;
+    height: 60px;
+    background: #000;
+    color: #fff;
+}
+
+
+/* editorial */
+.editorial {
+    display: flex;
+    justify-content: center;
+}
+.editorial img {
+    height: 95%;
+    width: 95%;
+}
