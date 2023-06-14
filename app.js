@@ -69,13 +69,18 @@ let memes = [
     //1 dancing
     "https://media1.giphy.com/media/6huOWH3TNWVheHWRSW/giphy.gif?cid=6c09b9524v4go3m7yq6adgxd5h0xjyxn8si9o8cpjrrd9k6o&ep=v1_stickers_related&rid=giphy.gif&ct=s",
     //2 gaga
-    "https://images.milledcdn.com/2019-04-03/QZXh9_Y9FQBzsju9/SC5t6VSMmt8J.gif"
+    "https://images.milledcdn.com/2019-04-03/QZXh9_Y9FQBzsju9/SC5t6VSMmt8J.gif",
+    // vibes
+    "https://i.giphy.com/media/h3u4sCxPq0Hfga9uya/giphy.webp"
 ]
 let count = 0;
 const changing = () => {
     let other = document.querySelector('.vibe')
     other.setAttribute('src', memes[count])
     count++
+    if (count == 4) {
+        count = 0;
+    }
 }
 
 
