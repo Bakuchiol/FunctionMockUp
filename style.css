@@ -88,11 +88,31 @@
     margin-top: 20px;
 }
 .navRight {
+    border: solid lightskyblue;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 45%;
-    margin-right: 60px;
+    margin-right: 20px;
+}
+.heart {
+    border: solid pink;
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.heart p {
+    margin-top: 5px;
+}
+.bag {
+    border: solid yellow;
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+.bag p {
+    margin-top: 5px;
 }
 .searchIcon {
     width: 15px;
@@ -102,14 +122,17 @@
     border: 2.5px solid white;
     border-radius: 50%;
     padding: 5px;
+    margin-left: 30px;
 }
 
 /* SUBNAV */
 .list{
+    z-index: 9999;
     border: solid white;
     font-size: 12px;
     height: 60px;
     padding-top: 20px;
+
 }
 .navBarScroll {
     background: black;
@@ -135,10 +158,24 @@
     color: #fff;
 }
 .mainDesc {
-    margin: 0;
+    border: solid salmon;
+    padding: 180px 40px 0 40px;
+}
+h1 {
+    font-size: 50px;
+    font-weight: 300;
+}
+.shop {
+    margin-top: 10px;
+    border: none;
+    background: #fff;
+    color: #000;
+    width: 150px;
+    height: 60px;
+    font-size: 15px;
 }
 
-/* -----ARROWS------ */
+/* -----ARROWS 1------ */
 .pointers {
     width: 100%;
     display: flex;
@@ -147,29 +184,53 @@
 }
 .arrow {
     width: 50px;
+}
+.one {
+    transform: rotate(180deg);
+    filter: invert(10)
+}
+.two {
     filter: invert(10)
 }
 
 /* ---------------- */
 
-
-
 /* bag carousel */
 .bagContainer {
-    display: flex;
-    justify-content: center; 
+    /* display: flex;
+    justify-content: center;  */
     border: 2px solid green;
 }
 .bagImages {
     border: solid red;
+    width: 100%;
 }
 .handbag {
-    height: 80%;
+    border: solid red;
+    height: 60%;
+    
 }
 .bagImages p {
     margin: 20px 0 20px 0;
     text-align: center;
     font-size: 20px;
+}
+/* ARROWS */
+.pointers2 {
+    width: 100%;
+    filter: invert(0);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 180px 30px 0 30px;
+}
+.another {
+    transform: rotate(180deg);
+}
+/* ------------ */
+.centerBag{
+    display: flex;
+    justify-content: center;
 }
 .centerButton {
     display: flex;
@@ -180,15 +241,66 @@
     height: 60px;
     background: #000;
     color: #fff;
+    border: none;
 }
-
 
 /* editorial */
 .editorial {
+    border: solid brown;
     display: flex;
     justify-content: center;
+    margin-top: 150px;
 }
 .editorial img {
     height: 95%;
     width: 95%;
+}
+
+/* gucci summer stories title */
+.summer h1 {
+    text-align: center;
+    margin: 30px 0 60px 0;
+}
+
+/*  GUCCI CAMPAIGN*/
+.summerCampaign {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.guy {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    /* text-align: center; */
+}
+.middleStories {
+    width: 80%;
+    height: 75%;
+    border: 2px solid darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.summerStories{
+    border: solid blueviolet;
+    width: 200px;
+    height: 200px;
+    margin-left: -25px;
+    margin-top: 12px;
+    text-align: center;
+    padding: 25px;
+    background: #fff;
+    opacity: 70%;
+    color: gray;
+}
+.summerStories p {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+.summerStories a {
+    font-size: 12px;
+    color: gray;
 }

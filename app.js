@@ -15,21 +15,26 @@ let handBags = [
     "https://media.gucci.com/style/Transparent_Center_0_0_730x490/1681488941/752597_FACFW_8920_001_077_0000_Light.png"
 ]
 
-let promotions = [
-    <p>Collect in Store: Shop gifts online by Thursday 4pm ET for pick-up before Father's Day</p>
-                <p>Explore our guide of iconic gifts for Father's Day</p>
-                <p>Complimentary gift packaging & on line exclusive reusable totes on all orders</p>
-]
-
+const promos = document.querySelector('.promoContainer')
 const nav = document.querySelector('.mainNav')
 const header = document.querySelector('.list');
-// solid color scroll
+
+
+// solid color scroll -- take out header & promo
 window.addEventListener('scroll', () => {
-    if(window.scrollY > 150) {
+    if(window.scrollY > 120) {
+        promos.style.display ="none"
         nav.style.display = "none";
         header.classList.add('navBarScroll');
-    } else if(window.scrollY <= 150) {
+    } else if(window.scrollY <= 120) {
         header.classList.remove('navBarScroll')
         nav.style.display = "flex"
+        promos.style.display = "block"
     }
 });
+
+// click logo -- lady gaga gucci gif
+let gif = "https://media4.giphy.com/media/FxF9Z3bWg7BsqO1trb/giphy.gif"
+
+// frame around editorial - zoom in and out
+let frame = "https://www.nicepng.com/png/full/1-19352_shapes-circle-frame-overlay-colorful-sparkle-glitter-png.png"
