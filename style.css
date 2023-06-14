@@ -5,40 +5,45 @@
     font-family: sans-serif;
 }
 /* try at animation */
-/* .promos {
-    animation-name: slideUp;
-    animation-duration: 2s;
-    animation-timing-function: ease-in;
-    display: block;
-} */
 
-@keyframes slideUp {
-    0%,50% {
-        transform : translateY(100%);
-    }
-    60%,
-    100% {
-        transform: translateY(0);
-    }
+@keyframes promo {
+    0% {top : 100%;}
+    4% { top : 0%}
+    33.33% {top: 0%}
+    37.33% {top: -100%}
+    100% { top: -100%}
 }
 .promoContainer {
     border: solid red;
     height: 50px;
     background: #fff;
     color: black;
-}
-.promotional{
     display: flex;
     overflow: hidden;
+    position: relative;
+}
+.promotional{
+    border: solid fuchsia;
+    display: flex;
     margin-left: 40px;
+    width: 100%;
+    height: 100%;
+}
+.promoDivs {
+    border: solid blue;
+    width: 60%;
+    height: 100%;
+    margin-left: 180px;
 }
 .promos{
     border: solid lime;
-    width: 90%;
     height: 30px;
     text-align: center;
-    margin-top: 15px;
+    margin: 5px 0 12px 0;
+    position: relative;
+    animation: 10s promo infinite ease-in-out;
 }
+
 .close {
     border: solid white;
     width: 15px;
