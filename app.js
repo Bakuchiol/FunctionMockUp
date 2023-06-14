@@ -52,6 +52,10 @@ const showFrame = () => {
 const stop = document.querySelector('spin');
 const spinner = document.querySelector('.spinSpin');
 
-const pause = () => {
-    spinner.style.animationPlayState = "pause"
+const twirl = () => {
+    spinner.classList.toggle('spinSpin')
+}
+
+const stopMoving = () => {
+    
 }
