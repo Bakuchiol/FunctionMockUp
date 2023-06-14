@@ -41,4 +41,17 @@ const gaga = () => {
 }
 
 // frame around editorial - spin
-let frame = ""
+const frame = document.querySelector('.frame')
+
+// show frame when poke bird
+const showFrame = () => {
+    frame.classList.toggle('spinFrame')
+}
+
+// stop frame when poke face
+const stop = document.querySelector('spin');
+const spinner = document.querySelector('.spinSpin');
+
+const pause = () => {
+    spinner.style.animationPlayState = "pause"
+}

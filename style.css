@@ -265,12 +265,47 @@ h1 {
     height: 95%;
     width: 95%;
 }
+.buttons{
+    border: solid tomato;
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    margin: 200px 0 0 550px;
+    display: flex;
+    justify-content: space-between;
+}
+.poof {
+    border: solid violet;
+    width:90px;
+    height: 90px;
+}
+.spin {
+    border: solid seagreen;
+    width: 150px;
+    height: 190px;
+    align-self: flex-end;
+    margin-bottom: 100px;
+}
 .frame {
-    display: ;
+    display: none;
     border: solid lawngreen;
     position: absolute;
     margin-top: 400px;
     margin-left: 350px;
+}
+.spinFrame {
+    display: block;
+}
+@keyframes roundAndRound {
+    0% {
+        transform: rotate(0turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+.spinSpin {
+    animation: 7000ms roundAndRound linear infinite;
 }
 
 /* gucci summer stories title */
