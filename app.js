@@ -4,7 +4,7 @@ let topContainer = [
     // suave man
     "https://media.gucci.com/content/HeroBigStandard_3200x1520/1685638168/HeroBigStandard_MLB-June23-010_001_Default.jpg",
     // suave man by the pool
-    ""
+    "https://media.gucci.com/content/HeroBigStandard_3200x1520/1684764918/HeroBigStandard_Summer-stories-2023-13_001_Default.jpg"
 
     ]
 
@@ -15,9 +15,11 @@ let handBags = [
     "https://media.gucci.com/style/Transparent_Center_0_0_730x490/1681488941/752597_FACFW_8920_001_077_0000_Light.png"
 ]
 
-const promos = document.querySelector('.promoContainer')
-const nav = document.querySelector('.mainNav')
+const promos = document.querySelector('.promoContainer');
+const nav = document.querySelector('.mainNav');
 const header = document.querySelector('.list');
+const prayer = document.querySelector('.gucciLogo');
+const show = document.querySelector('.gagaBox')
 
 
 // solid color scroll -- take out header & promo
@@ -34,7 +36,9 @@ window.addEventListener('scroll', () => {
 });
 
 // click logo -- lady gaga gucci gif
-let gif = "https://media4.giphy.com/media/FxF9Z3bWg7BsqO1trb/giphy.gif"
+const gaga = () => {
+    show.classList.toggle('gagaGif')
+}
 
-// frame around editorial - zoom in and out
-let frame = "https://www.nicepng.com/png/full/1-19352_shapes-circle-frame-overlay-colorful-sparkle-glitter-png.png"
+// frame around editorial - spin
+let frame = ""
