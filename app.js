@@ -13,7 +13,7 @@ const nav = document.querySelector('.mainNav');
 const header = document.querySelector('.list');
 const prayer = document.querySelector('.gucciLogo');
 const show = document.querySelector('.gagaBox')
-
+const frame = document.querySelector('.frame')
 
 // solid color scroll -- take out header & promo
 // 1. FUNCTION
@@ -36,7 +36,7 @@ const gaga = () => {
 }
 
 // frame around editorial - spin
-const frame = document.querySelector('.frame')
+
 
 // show frame when poke bird
 // 2. TOGGLE
@@ -86,4 +86,10 @@ const changing = () => {
 
 // 5. FUNCTION
 // click stories reverses alignment
+let discover = document.querySelector('.discover')
+
+//     flex-direction: row-reverse;
+const jumble = () => {
+    discover.style.flexDirection = "row-reverse"
+}
 

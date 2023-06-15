@@ -67,10 +67,11 @@
     height: 30px;
     margin: 10px 0 15px 0;
     position: relative;
-    animation: 10s promo infinite ease-in-out;
+    animation: 7s promo infinite ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(111, 108, 108);
 }
 
 .close {
@@ -99,7 +100,8 @@
     display: flex;
     /* border: solid yellowgreen; */
     height: 80px;
-    box-shadow: inset 0 30px 30px -1px rgba(0,0,0,0.9)
+    box-shadow: inset 0 30px 30px -1px rgba(0,0,0,0.9);
+    color: rgb(226, 224, 224);
 }
 .navLeft {
     display: flex;
@@ -119,8 +121,9 @@
 }
 
 .gucciLogo {
-    height: 40%;
-    margin-top: 20px;
+    height: 32%;
+    margin-top: 25px;
+    margin-right: 40px;
 }
 .navRight {
     /* border: solid lightskyblue; */
@@ -154,9 +157,10 @@
     filter: invert(10);
 }
 .circle {
-    /* border: 2.5px solid white; */
+    border: 2.5px solid white;
     border-radius: 50%;
-    padding: 5px;
+    border-width: 2px;
+    padding: 7px;
     margin-left: 30px;
 }
 
@@ -164,9 +168,8 @@
 .list{
     z-index: 9999;
     /* border: solid white; */
-    font-size: 12px;
+    font-size: 10px;
     height: 60px;
-    padding-top: 20px;
 }
 .navBarScroll {
     background: black;
@@ -178,8 +181,11 @@
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 25px;
+    gap: 32px;
     letter-spacing: .1em;
+}
+#vault {
+    color: rgb(115, 255, 0);
 }
 
 
@@ -244,7 +250,7 @@ h1 {
     margin-top: 130px;
 }
 .bagImages {
-    border: solid red;
+    /* border: solid red; */
     width: 50%;
     margin: auto;
     overflow: hidden;
@@ -253,7 +259,7 @@ h1 {
     margin: auto;
 }
 .handbag {
-    border: solid green;
+    /* border: solid green; */
     height: 60%;
 }
 .bagImages p {
