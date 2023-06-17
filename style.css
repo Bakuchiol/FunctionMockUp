@@ -8,7 +8,7 @@
 /* chat button */
 @keyframes shake {
     0% {
-        transform: translateX(2px);
+        transform: translateX(1px);
     }
     50% {
         transform: translateX(10px);
@@ -18,7 +18,6 @@
     }
 }
 .chat {
-    z-index: 999;
     display: flex;
     justify-content: flex-end;
 }
@@ -26,10 +25,11 @@
     /* border: solid palevioletred; */
     position:fixed;
     bottom: 0;
-    margin: 0 80px 60px 0;
+    margin: 0 80px 50px 0;
 }
 .bubbleJiggle {
     animation: 800ms shake infinite;
+    animation-iteration-count: 2;
 }
 
 
@@ -40,6 +40,18 @@
     37.33% {top: -100%}
     100% { top: -100%}
 }
+.promos{
+    /* border: solid lime; */
+    height: 30px;
+    margin: 10px 0 15px 0;
+    position: relative;
+    animation: 7s promo infinite ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(111, 108, 108);
+}
+
 .promoContainer {
     /* border: solid red; */
     height: 50px;
@@ -62,17 +74,7 @@
     height: 100%;
     margin-left: 180px;
 }
-.promos{
-    /* border: solid lime; */
-    height: 30px;
-    margin: 10px 0 15px 0;
-    position: relative;
-    animation: 7s promo infinite ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(111, 108, 108);
-}
+
 
 .close {
     /* border: solid white; */
@@ -338,6 +340,7 @@ h1 {
 .spinFrame {
     display: block;
 }
+/* 100%{ transform: rotateZ(360deg)} */
 @keyframes roundAndRound {
     0% {
         transform: rotate(0turn);
